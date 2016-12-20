@@ -1,0 +1,67 @@
+    /*
+    #ffd464
+	#5fa292
+	#cf4858
+	#202020
+	#f4f4f2*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #f4f4f2;
+    background-color: #ffd464;
+}
+
+#headerName{
+    padding: 20px;
+}
+#headerName h2{
+    margin:  0px;
+}
+#headerName a{
+    color: white;
+}
+#headerName a:hover{
+    text-decoration: none;
+}
+header{
+    background-color: #5fa292;
+}
+#jumbotron{
+    height: 600px;
+    width: 100%;
+    background-color: #cf4858;
+}
+#stepsAndIntro{
+
+}
+#steps{
+    color:#202020;
+    width: 80%;
+    margin:auto;
+}
+.details{
+    border: 2px solid #f4f4f2;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    background-color: #ffd464;
+}
+.details:hover{
+    border: 4px solid #5fa292;
+}
+#intro{
+    margin: auto;
+    width: 60%;
+    height: 75px;
+    border-bottom: solid #f4f4f2 2px;
+    padding-left: 6%;
+}
+#horizontalLine{
+    height: 100px;
+}
