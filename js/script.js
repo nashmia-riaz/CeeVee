@@ -21,12 +21,14 @@ $(function(){
         $("#image2").fadeOut(1000,function(){
           $(this).css("display","none").css("opacity","0");
         });
+        $("#dot2").css("background-color","#f4f4f2");
       }
 
       if(image3Display=="block"){
         $("#image3").fadeOut(1000,function(){
           $(this).css("display","none").css("opacity","0");
         });
+        $("#dot3").css("background-color","#f4f4f2");
       }
 
       $("#image1").css("display","block").delay(500).animate({
@@ -34,6 +36,7 @@ $(function(){
       },1000,function(){
         $(this).css("opacity","1");
       });
+      $("#dot1").css("background-color","#003554");
 
       break;
 
@@ -42,12 +45,14 @@ $(function(){
         $("#image1").fadeOut(1000,function(){
           $(this).css("display","none").css("opacity","0");
         });
+        $("#dot1").css("background-color","#f4f4f2");
       }
 
       if(image3Display=="block"){
         $("#image3").fadeOut(1000,function(){
           $(this).css("display","none").css("opacity","0");
         });
+        $("#dot3").css("background-color","#f4f4f2");
       }
 
       $("#image2").css("display","block").delay(500).animate({
@@ -55,7 +60,7 @@ $(function(){
       },1000,function(){
         $(this).css("opacity","1");
       });
-
+      $("#dot2").css("background-color","#003554");
       break;
 
       case 3:
@@ -63,12 +68,14 @@ $(function(){
         $("#image1").fadeOut(1000,function(){
           $(this).css("display","none").css("opacity","0");
         });
+        $("#dot1").css("background-color","#f4f4f2");
       }
 
       if(image2Display=="block"){
         $("#image2").fadeOut(1000,function(){
           $(this).css("display","none").css("opacity","0");
         });
+        $("#dot2").css("background-color","#f4f4f2");
       }
 
       $("#image3").css("display","block").delay(500).animate({
@@ -76,7 +83,7 @@ $(function(){
       },1000,function(){
         $(this).css("opacity","1");
       });
-
+      $("#dot3").css("background-color","#003554");
       break;
     }
   }
@@ -89,5 +96,20 @@ $(function(){
       console.log("slide number: "+slideNo);
   }
 
+  $("#dot1").click(function(){
+    slideNo = 1;
+    displaySlide();
+  });
 
+
+  $("#dot2").click(function(){
+    slideNo = 2;
+    displaySlide();
+  });
+
+
+  $("#dot3").click(function(){
+    slideNo = 3;
+    displaySlide();
+  });
 })
