@@ -6,11 +6,13 @@ $(function(){
   var slideNo = 1;
   setInterval(slideShow, 5000);
 
+  //Set the height of jumbotron to cover the height of the window
   var screenHeight = $(window).height();
   var headerHeight = $("header").height();
   var jumboHeight = screenHeight - headerHeight;
   $("#jumbotron").css("height",jumboHeight);
 
+  //***********************slideshow*******************************
   function displaySlide(){
     var image1Display = $("#image1").css("display");
     var image2Display = $("#image2").css("display");
@@ -112,4 +114,19 @@ $(function(){
     slideNo = 3;
     displaySlide();
   });
-})
+  var dotsPos = screenHeight-20;
+  $("#dots").offset({top: dotsPos});
+  //*********************************************
+
+  /*******************steps**********************/
+  $(".stepsIndividual").click(function(){
+    $(".stepsIndividual").css("background-color","#f4f4f2");
+    $(".stepsIndividual").css("color","#033554");
+    $(this).css("background-color","#033554");
+    $(this).css("color","#f4f4f2");
+  });
+  if(screenWidth<=767){
+    $(".stepsIndividual").css("background-color","#f4f4f2");
+  }
+  /**********************************************/
+});
