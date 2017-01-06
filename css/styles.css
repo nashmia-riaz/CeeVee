@@ -159,13 +159,10 @@ header{
     border: 3px solid #003554;
     padding: 20px;
     background-color: #f4f4f2;
-    transition: background-color 1s;
-    -webkit-transition:background-color 1s;
-    -moz-transition:background-color 1s;
+    transition: background-color 1s, color 1s;
+    -webkit-transition:background-color 1s, color 1s;
+    -moz-transition:background-color 1s, color 1s;
 
-    transition: color 1s;
-    -webkit-transition:color 1s;
-    -moz-transition:color 1s;
 }
 .stepsIndividual img{
     width: 40%;
