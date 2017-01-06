@@ -15,6 +15,11 @@ body{
 h1{
     font-family:"Graduate", cursive;
 }
+hr{
+    width: 80%;
+    display: block;
+    border-top: 3px solid #003554;
+}
 /************* HEADER *****************/
 #headerName{
     padding: 20px;
@@ -131,7 +136,7 @@ header{
 #steps{
     z-index:2;
     height: 150px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .row h1{
     margin-top: 50px;
@@ -186,8 +191,8 @@ header{
 .buildResumeButton a{
     text-decoration: none;
     font-size: 2em;
-    color: #f4f4f2;
-    background-color: #003554;
+    color: #033554;
+    background-color: #f4f4f2;
     padding: 20px;
     border-radius: 40px;
 }
@@ -197,7 +202,17 @@ header{
     margin:auto;
 }
 .buildResumeButton{
-    margin-top: 90px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#buildNow{
+    margin-top: 80px;
+    background-color: #003554;
+    color: #f4f4f2;
+
+}
+#buildNow >div{
+    width: 80%;
 }
 /****************Large devices****************/
 @media screen and (min-width: 1200px){
