@@ -11,7 +11,6 @@ $(function(){
   var headerHeight = $("header").height();
   var jumboHeight = screenHeight - headerHeight;
   $("#jumbotron").css("height",jumboHeight);
-
   //***********************slideshow*******************************
   function displaySlide(){
     var image1Display = $("#image1").css("display");
@@ -119,14 +118,50 @@ $(function(){
   //*********************************************
 
   /*******************steps**********************/
+  var prevClick;
   $(".stepsIndividual").click(function(){
     $(".stepsIndividual").css("background-color","#f4f4f2");
     $(".stepsIndividual").css("color","#033554");
     $(this).css("background-color","#033554");
     $(this).css("color","#f4f4f2");
   });
-  if(screenWidth<=767){
-    $(".stepsIndividual").css("background-color","#f4f4f2");
-  }
+
+  $(".stepsIndividual:eq( 0 )").click(function(){
+    $("#step1Information").removeClass("visible-xs-block");
+    $("#step"+prevClick+"Information").addClass("visible-xs-block");
+    prevClick=1;
+  });
+
+  $(".stepsIndividual:eq( 1 )").click(function(){
+    $("#step2Information").removeClass("visible-xs-block");
+    $("#step"+prevClick+"Information").addClass("visible-xs-block");
+    prevClick=2;
+  });
+
+  $(".stepsIndividual:eq( 2 )").click(function(){
+    $("#step3Information").toggleClass("visible-xs-block");
+    $("#step"+prevClick+"Information").toggleClass("visible-xs-block");
+    prevClick=3;
+  });
+
+  $(".stepsIndividual:eq( 3 )").click(function(){
+    $("#step4Information").toggleClass("visible-xs-block");
+    $("#step"+prevClick+"Information").toggleClass("visible-xs-block");
+    prevClick=4;
+  });
+
+
+  $(".stepsIndividual:eq( 0 )").click();
+  prevClick=1;
+
+  $(window).resize(function(){
+    if($(window).width()<768){
+      $("#step1Information").removeClass("hidden");
+      $("#step2Information").removeClass("hidden");
+      $("#step3Information").removeClass("hidden");
+      $("#step4Information").removeClass("hidden");
+    }
+  });
+
   /**********************************************/
 });

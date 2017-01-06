@@ -129,11 +129,8 @@ header{
 
 /*************JUMBOTRON END**********/
 #steps{
-    text-align:center;
-    position:relative;
     z-index:2;
     height: 150px;
-    margin:auto;
     margin-top: 30px;
 }
 .row h1{
@@ -173,7 +170,35 @@ header{
     border: 3px solid #41b7c4;
     cursor: pointer;
 }
-
+.displayStepText{
+  text-align:center;
+  position:relative;
+  margin:auto;
+  margin-top: 30px;
+}
+.displayStepPicture img{
+    width: 60%;
+    margin-top: 20%;
+}
+.hidden{
+    display: none;
+}
+.buildResumeButton a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #f4f4f2;
+    background-color: #003554;
+    padding: 20px;
+    border-radius: 40px;
+}
+.centerDiv{
+    text-align:center;
+    position:relative;
+    margin:auto;
+}
+.buildResumeButton{
+    margin-top: 90px;
+}
 /****************Large devices****************/
 @media screen and (min-width: 1200px){
     #steps{
@@ -201,7 +226,7 @@ header{
 
 
 /**************extra small devices************/
-@media (max-width:767px){
+@media (max-width:768px){
     #steps{
         width:400px;
     }
@@ -211,12 +236,21 @@ header{
     .stepsIndividual{
         border: none;
         display: block;
+        background-color: #f4f4f2!important;
+        color: #033554!important;
     }
     .stepsIndividual:hover{
         background-color: #f4f4f2!important;
         color: #033554!important;
         border: 0px solid #41b7c4;
         cursor: pointer;
+    }
+
+    .displayStepText h3{
+        font-size: 1.1em;
+    }
+    .displayStepText{
+        margin-bottom: 14.5%;
     }
 }
 /********************************************/

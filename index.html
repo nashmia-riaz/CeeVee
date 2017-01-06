@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Cee Vee | Home Page</title>
     <link rel="shortcut icon" href="images/resumeIcon.ico" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
@@ -52,38 +52,104 @@
       </div>
     </div>
 
-    <div class="row">
-      <h1 class="text-center">Steps to building your resume</h1>
-      <div id="steps">
-        <div class="col-lg-3 col-sm-3">
-          <div class="stepsIndividual" id="what">
-            <img src="images/how.svg" alt="">
-            <h4>What is Cee Vee?</h4>
+    <div id="#main-content">
+      <div class="row">
+        <h1 class="text-center">Steps to building your resume</h1>
+        <div id="steps" class="centerDiv">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="what">
+                <img src="images/how.svg" alt="">
+                <h4>What is Cee Vee?</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="how">
+                <img src="images/gears.svg" alt="">
+                <h4>How does it work?</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="multipleTemplates">
+                <img src="images/multipleTemplates.svg" alt="">
+                <h4>Resume Templates</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="download">
+                <img src="images/download.svg" alt="">
+                <h4>Download your resume</h4>
+              </div>
+            </div>
+
           </div>
-        </div>
-        <div class="col-lg-3 col-sm-3">
-          <div class="stepsIndividual" id="how">
-            <img src="images/gears.svg" alt="">
-            <h4>How does it work?</h4>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-3">
-          <div class="stepsIndividual" id="multipleTemplates">
-            <img src="images/multipleTemplates.svg" alt="">
-            <h4>Resume Templates</h4>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-3">
-          <div class="stepsIndividual" id="download">
-            <img src="images/download.svg" alt="">
-            <h4>Download your resume</h4>
+
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="row">
+              <div id="step1Information" class="visible-xs-block">
+                <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                  <h2 class="hidden-xs">What is CeeVee.com?</h2>
+                  <h3>Cee Vee is an online web application that can be used to
+                    build a professional resume within a few simple steps.</h3>
+                </div>
+                <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                  <img src="images/whatIsCeeVee.png" alt="">
+                </div>
+              </div>
+
+              <div id="step2Information" class="visible-xs-block">
+                <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                  <h2 class="hidden-xs">How does CeeVee.com work?</h2>
+                  <h3>Enter your education, job experience and personal information
+                  and move on to select a template that suits you best.</h3>
+                </div>
+                <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                  <img src="images/howDoesItWork.png" alt="">
+                </div>
+              </div>
+
+              <div id="step3Information" class="visible-xs-block">
+                <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                  <h2 class="hidden-xs">Resume templates</h2>
+                  <h3>Choose from tailor-made templates to make your resume
+                  stand out. Professional looking templates for all kinds of jobs.</h3>
+                </div>
+                <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                  <img src="images/resumeTemplates.png" alt="">
+                </div>
+              </div>
+
+              <div id="step4Information" class="visible-xs-block">
+                <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                  <h2 class="hidden-xs">Download your resume</h2>
+                  <h3>Download your resume in PDF format for easy and
+                  compatible sharing. No conversion hassle, no problem!</h3>
+                </div>
+                <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                  <img src="images/downloadResume.png" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-md-12 buildResumeButton centerDiv">
+        <a href="#">Build your resume now!</a>
+      </div>
+    </div>
+
   </body>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/script.js">
 
   </script>
 </html>
+
+<!-- TODO: replace main content for small screen view -->
