@@ -164,7 +164,7 @@ $(function(){
 
   /**********************************************/
   /*************Generate template preview********/
-  $.getJSON("/misc/templatePreview.json", function (data) {
+  $.getJSON("../misc/templatePreview.json", function (data) {
     var html="";
     for(var x=0;x < data.preview.length;x++){
       html += "<div class='col col-lg-4 col-md-6 col-sm-6 col-xs-12'>"
