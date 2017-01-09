@@ -165,23 +165,13 @@ $(function(){
   });
 
   /**********************************************/
-  /*************Generate template preview********/
-  console.log(preview);
-  var html="";
-  for(var x=0;x < preview.length;x++){
-    html += "<div class='col col-lg-4 col-md-6 col-sm-6 col-xs-12'>"
-      +"<div class='resumeTemplatePreview centerDiv'>"
-        +"<div class='resumeTemplatePicture'>"
-            +"<img class='img-responsive' src='../images/templatePreviewImages/"+preview[x].filename+"'>"
-          +"<div class='resumeTemplateText'>"
-            +"<p>"+preview[x].name+"</p>"
-          +"</div>"
-        +"</div>"
-      +"</div>"
-    +"</div>";
+  /**************Generate download page**********/
+  function generateDownloadPage(){
+    var html="";
+    html+="<div id='placeHolder'></div>";
+    $("#downloadPreview").html(html);
   }
-  $("#templateGrid").html(html);
 
-
+  generateDownloadPage();
   /**********************************************/
 });

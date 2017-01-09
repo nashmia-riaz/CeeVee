@@ -267,6 +267,28 @@ header{
 .resumeTemplatePreview:hover p{
     display: block;
 }
+/*********************************************/
+.downloadButton{
+    background-color: #033554;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 40px;
+}
+.downloadButton{
+    color: #f4f4f2;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+}
+#downloadPreview{
+    width: 100%
+}
+#placeHolder{
+    height: 500px;
+    width: 100%;
+    border: 2px solid red;
+    background-color: red;
+    margin-top: 50px;
+}
 /****************Large devices****************/
 @media screen and (min-width: 1200px){
     #steps{
