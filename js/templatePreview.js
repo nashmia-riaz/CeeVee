@@ -1,5 +1,5 @@
-{
-	"preview":[{
+var preview=[
+	{
 		"filename": "1.jpg",
 		"name":"Bold"
 	},
@@ -21,6 +21,4 @@
 
 
 
-]
-
-}
+];
