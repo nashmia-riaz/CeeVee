@@ -207,10 +207,65 @@ header{
     margin-top: 80px;
     background-color: #003554;
     color: #f4f4f2;
-
 }
 #buildNow >div{
     width: 80%;
+}
+
+/***********************************************/
+#templateGrid{
+    width: 60%;
+}
+.resumeTemplatePreview{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.resumeTemplatePicture{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    transform-origin: center;
+    box-shadow: 10px 10px 10px rgba(1,1,1,0.15);
+    /*transition: width 0.5s, height 0.5s, margin 0.5s, box-shadow 0.5s;*/
+}
+.resumeTemplatePicture img{
+    width: 100%;
+}
+.resumeTemplatePicture:hover{
+    /*width: 150%;*/
+    /*height: 150%;*/
+    box-shadow: 10px 10px 10px rgba(1,1,1,0.5);
+    transform: scale(1.5,1.5);
+}
+.resumeTemplatePreview:hover{
+    z-index: 2;
+}
+
+.resumeTemplateText{
+    height:20%;
+    width: 100%;
+    z-index: 3;
+    margin-top: -30px;
+    background-color: rgba(0,53,84,0);
+    transform-origin: center;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.resumeTemplatePicture:hover  .resumeTemplateText{
+    transform: scale(1);
+    background-color: rgba(0,53,84,1);
+}
+.resumeTemplatePreview p {
+    display: none;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    padding:5px;
+    font-size: 1.2em;
+}
+.resumeTemplatePreview:hover p{
+    display: block;
 }
 /****************Large devices****************/
 @media screen and (min-width: 1200px){
@@ -275,5 +330,6 @@ header{
         margin-top:0px;
         margin-bottom: 13%;
     }
+
 }
 /********************************************/

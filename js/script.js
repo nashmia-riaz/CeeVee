@@ -94,7 +94,6 @@ $(function(){
       if(slideNo > 3)
         slideNo = 1;
       displaySlide();
-      console.log("slide number: "+slideNo);
   }
 
   $("#dot1").click(function(){
@@ -161,6 +160,29 @@ $(function(){
       $("#step3Information").removeClass("hidden");
       $("#step4Information").removeClass("hidden");
     }
+  });
+
+  /**********************************************/
+  /*************Generate template preview********/
+  $.getJSON("../misc/templatePreview.json", function (data) {
+    var html="";
+    for(var x=0;x < data.preview.length;x++){
+      html += "<div class='col col-lg-4 col-md-6 col-sm-6 col-xs-12'>"
+        +"<div class='resumeTemplatePreview centerDiv'>"
+          +"<div class='resumeTemplatePicture'>"
+              +"<img class='img-responsive' src='images/templatePreviewImages/"+data.preview[x].filename+"'>"
+            +"<div class='resumeTemplateText'>"
+              +"<p>"+data.preview[x].name+"</p>"
+            +"</div>"
+          +"</div>"
+        +"</div>"
+      +"</div>";
+    }
+    console.log(html);
+    $("#templateGrid").html(html);
+  }).fail(function( jqxhr, textStatus, error ) {
+    var err = textStatus + ', ' + error;
+    console.log( "Request Failed: " + err);
   });
 
   /**********************************************/

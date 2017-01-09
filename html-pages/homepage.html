@@ -4,47 +4,170 @@
     <meta charset="utf-8">
     <title>Cee Vee | Home Page</title>
     <link rel="shortcut icon" href="images/resumeIcon.ico" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="text-left" id="headerName">
-        <a href="#"><h2>Cee Vee</h2></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="text-left" id="headerName">
+            <a href="#"><h2>Cee Vee</h2></a>
+          </div>
+        </div>
       </div>
     </header>
 
     <div id="jumbotron">
+      <span class="" id="image1">
+        <div class="jumboTextBG">
+          <div class="jumboText">
+            <h1>Multiple templates</h1>
+            <h3>Choose from multiple templates and style your resume in seconds!</h3>
+            <a href="#">Get started now!</a>
+          </div>
+        </div>
+      </span>
+      <span class="" id="image2">
+        <div class="jumboTextBG">
+          <div class="jumboText">
+            <h1>Get that job</h1>
+            <h3>Get hired immediately with our professional resumes!</h3>
+            <a href="#">Get started now!</a>
+          </div>
+        </div>
+      </span>
+      <span class="" id="image3">
+        <div class="jumboTextBG">
+          <div class="jumboText">
+            <h1>Avoid the hassle</h1>
+            <h3>Build your resume easily without having to learn any graphic designing softwares!</h3>
+            <a href="#">Get started now!</a>
+          </div>
+        </div>
+      </span>
       <!-- Here will be the slideshow -->
+      <div id="dots">
+        <span id="dot1"></span>
+        <span id="dot2"></span>
+        <span id="dot3"></span>
+      </div>
     </div>
 
-    <div id="stepsAndIntro">
-      <div id="steps" class="text-center">
-        <h1>Steps to build your professional resume
-        in the blink of an eye!</h1>
-      </div>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="text-center">Steps to building your resume</h1>
+        <div id="steps" class="centerDiv">
+          <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-6">
 
-      <div id="intro">
-          <span class="details">
-            <!-- style using jquery to change background color -->
-          </span>
-          <span class="details">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="what">
+                <img src="images/how.svg" alt="">
+                <h4>What is Cee Vee?</h4>
+              </div>
+            </div>
 
-          </span>
-          <span class="details">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="how">
+                <img src="images/gears.svg" alt="">
+                <h4>How does it work?</h4>
+              </div>
+            </div>
 
-          </span>
-          <span class="details">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="multipleTemplates">
+                <img src="images/multipleTemplates.svg" alt="">
+                <h4>Resume Templates</h4>
+              </div>
+            </div>
 
-          </span>
-          <span class="details">
-
-          </span>
-
-          <div class="">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+              <div class="stepsIndividual" id="download">
+                <img src="images/download.svg" alt="">
+                <h4>Download your resume</h4>
+              </div>
+            </div>
 
           </div>
+
+          <div class="col col-lg-12 col-sm-12 col-md-12">
+            <div class="row">
+              <div class="container-fluid">
+                <div id="step1Information" class="visible-xs-block">
+                  <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                    <h2 class="hidden-xs">What is CeeVee.com?</h2>
+                    <h3>Cee Vee is an online web application that can be used to
+                      build a professional resume within a few simple steps.</h3>
+                  </div>
+                  <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                    <img src="images/WhatIsCeeVee.png" alt="">
+                  </div>
+                </div>
+
+                <div id="step2Information" class="visible-xs-block">
+                  <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                    <h2 class="hidden-xs">How does CeeVee.com work?</h2>
+                    <h3>Enter your education, job experience and personal information
+                    and move on to select a template that suits you best.</h3>
+                  </div>
+                  <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                    <img src="images/howDoesItWork.png" alt="">
+                  </div>
+                </div>
+
+                <div id="step3Information" class="visible-xs-block">
+                  <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                    <h2 class="hidden-xs">Resume templates</h2>
+                    <h3>Choose from tailor-made templates to make your resume
+                    stand out. Professional looking templates for all kinds of jobs.</h3>
+                  </div>
+                  <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                    <img src="images/resumeTemplates.png" alt="">
+                  </div>
+                </div>
+
+                <div id="step4Information" class="visible-xs-block">
+                  <div class="displayStepText col-lg-6 col-md-6 col-sm-6">
+                    <h2 class="hidden-xs">Download your resume</h2>
+                    <h3>Download your resume in PDF format for easy and
+                    compatible sharing. No conversion hassle, no problem!</h3>
+                  </div>
+                  <div class="displayStepPicture col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                    <img src="images/downloadResume.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+
+    <div id="buildNow">
+      <div class="row centerDiv">
+        <div class="container">
+          <div class="col-lg-12 ">
+            <h1>Get 3x more interviews than your peers!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row centerDiv">
+        <div class="container">
+          <div class="col-lg-12 col-sm-12 col-md-12 buildResumeButton ">
+            <a href="#">Build your resume now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js">
+
+  </script>
 </html>
+
+<!-- TODO: replace main content for small screen view -->
