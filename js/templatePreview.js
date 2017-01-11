@@ -1,11 +1,11 @@
 var preview=[
 	{
-		"filename": "1.jpg",
+		"filename": "1.png",
 		"name":"Bold"
 	},
 
 	{
-		"filename":"2.jpg",
+		"filename":"2.png",
 		"name":"Simple"
 	},
 
@@ -47,4 +47,17 @@ $(function(){
   generateTemplatesPreview();
 
   /**********************************************/
+  $("button").click(function(){
+    html2canvas($("body"), {
+            onrendered: function(canvas) {
+
+                var imgData = canvas.toDataURL('image/png');
+                console.log('Report Image URL: '+imgData);
+                var doc = new jsPDF('p', 'mm', [297, 210]); //210mm wide and 297mm high
+
+                doc.addImage(imgData, 'PNG', 10, 10);
+                doc.save('sample.pdf');
+            }
+        });
+  });
 });

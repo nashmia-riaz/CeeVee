@@ -227,6 +227,7 @@ header{
     transition: all 0.5s;
     transform-origin: center;
     box-shadow: 10px 10px 10px rgba(1,1,1,0.15);
+    border: 2px solid blue;
     /*transition: width 0.5s, height 0.5s, margin 0.5s, box-shadow 0.5s;*/
 }
 .resumeTemplatePicture img{
