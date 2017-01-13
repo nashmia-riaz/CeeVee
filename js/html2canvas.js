@@ -1154,6 +1154,7 @@ function Font(family, size) {
 
     container.style.visibility = "hidden";
     container.style.fontFamily = family;
+    alert(family);
     container.style.fontSize = size;
     container.style.margin = 0;
     container.style.padding = 0;

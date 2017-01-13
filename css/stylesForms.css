@@ -1,0 +1,303 @@
+
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll; }
+/*body { font: 12px/1.4 Helvetica, sans-serif; background: #333; color: #333; }
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: block; clear: both; }
+ * html .group { height: 1%; } .group { display: block; }*/ /* close commented backslash hack */
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+a:focus { outline: 0; }
+
+#page-wrap {
+    width: 70%;
+    margin: auto;
+    background: #91c7ff;
+    padding: 8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+	background: -moz-linear-gradient(top,  #eee,  #ccc);
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+}
+
+.group{
+	width:100%;
+}
+#main-content {
+
+	padding: 14px; }
+
+/*h1 { font: bold 32px Helvetica, Arial, Sans-Serif; letter-spacing: -1px; padding: 14px; color: #333; text-shadow: 1px 1px 1px white; }
+p { margin: 0 0 15px 0; }*/
+
+/*nav ul {
+    list-style: none; background: #154c85; padding: 5px 20px; width: 478px; position: relative;
+    left: -9px;
+}*/
+ul{
+	width: 100%;
+	padding: 0px;
+}
+nav ul li {
+
+	display: inline; }
+nav ul li a {
+	/*width: 100%;*/
+	margin-right: -10px;
+	display: block;
+	float: left;
+	border-top: 1px solid #96d1f8;
+	background: #41b7c4;
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+	background: -moz-linear-gradient(top,  #65a9d7,  #3e779d);*/
+	height: 22px;
+	padding: 0px 53px;
+	/*-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;*/
+	-webkit-text-stroke: 1px transparent;
+	font-style: normal;
+	font-family: 1.2px ;
+	font-family: 'Graduate';
+	color: #f4f4f2;
+	text-decoration: none;
+	margin: 0px 4.5px 0px 0.3px;
+	width: 24.5%;
+}
+nav ul li a:hover {
+	border-top: 1px solid #4789b4;
+	background: #f4f4f2;
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#3d789f), to(#28597a));
+	background: -moz-linear-gradient(top,  #3d789f,  #28597a);*/
+	color: #00b395;
+}
+nav ul li a:active, nav ul li a.current {
+	border-top-color: #245779;
+	background: #41b7c4;
+	position: relative;
+	top: 1px;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=text]:focus {
+    background-color: #f4f4f2;
+}
+
+input[type=date] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=date]:focus {
+    background-color: #f4f4f2;
+}
+
+input[type=number] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=number]:focus {
+    background-color: #f4f4f2;
+}
+input[type=tel] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=tel]:focus {
+    background-color: #f4f4f2;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=email]:focus {
+    background-color: #f4f4f2;
+}
+
+textarea{
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea:focus{
+  background-color: #f4f4f2;
+}
+
+
+#guts{
+    width:100%;
+    display:inline-block;
+    text-align: left;
+    font-style: bold;
+    font-family: 'Ubuntu';
+
+}
+#fname, #lname, #age, #gender, #profession, #email, #phonenum, #add, #summary, #degree, #grade, #grad, #school, #soft, #frame, #misc, #company, #start, #end, #pos{
+  display:block;
+    width:100%;
+}
+
+#radio1, #radio2, #radio3{
+
+}
+
+
+.genderRadio {
+	display: block;
+	margin: 10px;
+	margin-left: 0px;
+    /*border-radius: 5px;*/
+    /*padding: 20px;*/
+		/*background-color: #f2f2f2;*/
+}
+body{
+ text-align: center;
+}
+h1{
+  color: #f4f4f2;
+  background-color: #41b7c4;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.button0 {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f4f4f2;
+  background-color: #00b395;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
+  font-family: 'Ubuntu';
+
+
+}
+
+.button0:hover {background-color: #41b7c4}
+
+.button0:active {
+  background-color: #f4f4f2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+	width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f4f4f2;
+  background-color: #00b395;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px #999;
+   font-family: 'Ubuntu';
+
+}
+
+.button:hover {background-color: #41b7c4}
+
+.button:active {
+  background-color: #f4f4f2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body{
+  margin      : 0;
+  /*padding     : 1.5em;*/
+  font-family : Georgia,Utopia,Charter,serif;
+}
+
+/*.gender{
+  margin-bottom : 1.5em;
+}*/
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.radio-custom-label {
+    position: absolute;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\2713";
+    color: #00b395;
+}
+
+.radio-custom:focus + .radio-custom-label {
+  outline: 0.5px solid #ddd; /* focus style */
+}

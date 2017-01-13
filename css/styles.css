@@ -15,6 +15,12 @@ body{
 h1{
     font-family:"Graduate", cursive;
 }
+/*h1{
+  color: #f4f4f2;
+  background-color: #41b7c4;
+  padding: 12px 20px;
+  width: 100%;
+}*/
 hr{
     width: 80%;
     display: block;
@@ -29,13 +35,14 @@ hr{
     margin:  0px;
 }
 #headerName a{
-    color: #003554;
+    color: #f4f4f2;
 }
 #headerName a:hover{
     text-decoration: none;
 }
 header{
-    background-color: #f4f4f2;
+    background-color: #003554;
+    width: 100%;
 }
 /****************HEADER END***************/
 
@@ -227,7 +234,6 @@ header{
     transition: all 0.5s;
     transform-origin: center;
     box-shadow: 10px 10px 10px rgba(1,1,1,0.15);
-    border: 2px solid blue;
     /*transition: width 0.5s, height 0.5s, margin 0.5s, box-shadow 0.5s;*/
 }
 .resumeTemplatePicture img{
@@ -286,9 +292,10 @@ header{
 #placeHolder{
     height: 500px;
     width: 100%;
-    border: 2px solid red;
-    background-color: red;
     margin-top: 50px;
+}
+#mainHeading{
+    margin: 50px;
 }
 /****************Large devices****************/
 @media screen and (min-width: 1200px){

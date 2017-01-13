@@ -1,11 +1,11 @@
 var preview=[
 	{
-		"filename": "1.png",
+		"filename": "1.jpg",
 		"name":"Bold"
 	},
 
 	{
-		"filename":"2.png",
+		"filename":"2.jpg",
 		"name":"Simple"
 	},
 
@@ -16,6 +16,26 @@ var preview=[
 
 	{
 		"filename":"4.jpg",
+		"name":"Professional"
+	},
+
+	{
+		"filename":"5.jpg",
+		"name":"Professional"
+	},
+
+	{
+		"filename":"6.jpg",
+		"name":"Professional"
+	},
+
+	{
+		"filename":"7.jpg",
+		"name":"Professional"
+	},
+
+	{
+		"filename":"8.jpg",
 		"name":"Professional"
 	}
 
@@ -32,12 +52,14 @@ $(function(){
     for(var x=0;x < preview.length;x++){
       html += "<div class='col col-lg-4 col-md-6 col-sm-6 col-xs-12'>"
         +"<div class='resumeTemplatePreview centerDiv'>"
+				+"<a href='finalPreview.html'>"
           +"<div class='resumeTemplatePicture'>"
               +"<img class='img-responsive' src='../images/templatePreviewImages/"+preview[x].filename+"'>"
-            +"<div class='resumeTemplateText'>"
-              +"<p>"+preview[x].name+"</p>"
-            +"</div>"
-          +"</div>"
+            	+"<div class='resumeTemplateText'>"
+              	+"<p>"+preview[x].name+"</p>"
+            	+"</div>"
+          	+"</div>"
+					+"</a>"
         +"</div>"
       +"</div>";
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myResumeApp" ng-controller="myController">
   <head>
     <head>
       <meta charset="utf-8">
@@ -13,6 +13,7 @@
     </head>
   </head>
   <body>
+    {{hello}}
     <header>
       <div class="container-fluid">
         <div class="row">
@@ -23,9 +24,9 @@
       </div>
     </header>
 
-    <h1 class="text-center">Template Preview</h1>
+    <h1 class="text-center" id="mainHeading">Template Preview</h1>
 
-    <div class="centerDiv">
+    <div class="centerDiv" id="button">
       <a href="#">
         <div class="downloadButton centerDiv">Click Here to Download</div></a>
     </div>
@@ -33,16 +34,26 @@
     <h3 class="text-center">or</h3>
 
     <div class="centerDiv">
-      <a href="#">
+      <a href="templates.html">
         <div class="downloadButton centerDiv">Pick another template</div></a>
     </div>
 
     <div class="row">
-      <div class="container col-lg-12 col-sm-12 col-md-12" id="downloadPreview">
+      <div class="container col-lg-12 col-sm-12 col-md-12" id="downloadPreview" ng-bind-html="divHtmlVar">
 
       </div>
     </div>
   </body>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="../js/script.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jsPDF.js"></script>
+  <script src="../js/zlib.js"></script>
+  <script src="../js/png.js"></script>
+  <script src="../js/addimage.js"></script>
+  <script src="../js/pngsupport.js"></script>
+  <script src="../js/html2canvas.js"> </script>
+  <script src="../js/split_text_to_size.js"></script>
+  <script src="../js/standard_fonts_metrics.js"></script>
+  <script src="../js/from_html.js"> </script>
+  <script src="../js/angularjs.js"></script>
+  <script type="text/javascript" src="../js/generateFinalResume.js"></script>
 </html>
