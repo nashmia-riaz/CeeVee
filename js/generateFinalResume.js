@@ -5,11 +5,10 @@ var fonts = [];
 var app = angular.module("myResumeApp",[]);
 
 app.controller("myController",['$http','$scope','$compile',function($http, $scope,$compile){
-
-  $http.get("/html-pages/resumeTemplates/elegant.html")
-  .then(function(response){
+    $http.get("resumeTemplates/elegant.html")
+    .then(function(response){
     var head = $('head');
-    head.append($compile('<link rel="stylesheet" href="/css/resumeTemplates/elegant.css">')($scope));
+    // head.append($compile('<link rel="stylesheet" href="/css/resumeTemplates/elegant.css">')($scope));
     head.append($compile('<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">')($scope));
     var data = $compile(response.data)($scope);
     $("#downloadPreview").html($compile(data)($scope));

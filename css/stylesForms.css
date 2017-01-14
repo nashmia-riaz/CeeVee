@@ -5,7 +5,7 @@ html { overflow-y: scroll; }
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 .group { display: block; clear: both; }
  * html .group { height: 1%; } .group { display: block; }*/ /* close commented backslash hack */
-article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+article, aside, figure, footer, hgroup, menu, nav, section { display: block; }
 a:focus { outline: 0; }
 
 #page-wrap {
@@ -257,7 +257,7 @@ h1{
 body{
   margin      : 0;
   /*padding     : 1.5em;*/
-  font-family : Georgia,Utopia,Charter,serif;
+  /*font-family : Georgia,Utopia,Charter,serif;*/
 }
 
 /*.gender{
