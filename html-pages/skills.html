@@ -7,33 +7,19 @@
     <title>Cee Vee | Education</title>
     <link rel="shortcut icon" href="../images/resumeIcon.ico" />
 
-    <link rel='stylesheet' type='text/css' href='css/style.css' />
-
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/stylesForms.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
-    <script type='text/javascript' src='js/dynamicpage.js'></script>
 </head>
 
 <body>
-  <header>
-       <div class="container-fluid">
-         <div class="row">
-           <div class="text-left" id="headerName">
-             <a href="../index.html"><h2>Cee Vee</h2></a>
-           </div>
-         </div>
-       </div>
-     </header>
 
 
     <div id="page-wrap">
 
-        <div>
+        <header>
             <h1>Information</h1>
 
             <nav>
@@ -44,7 +30,7 @@
                     <li><a href="skills.html">Skills</a></li>
                 </ul>
             </nav>
-        </div>
+        </header>
 
         <section id="main-content">
             <div id="guts">
@@ -60,10 +46,10 @@
                     <input type="text" id="misc" name="miscellaneous"><br>
 
 
-                    <button class="button" a link rel="import" onclick="location.href='templates.html'" type="submit">Submit</button>
 
                 </form>
-            </div>
+
+                <button class="button" onclick="window.location.assign('templates.html');" id="submitButton">Submit</button>            </div>
         </section>
 
 
@@ -72,4 +58,7 @@
 
 </body>
 
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/jquery.ba-hashchange.min.js'></script>
+<script type='text/javascript' src='../js/dynamicpage.js'></script>
 </html>

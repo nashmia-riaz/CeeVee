@@ -10,6 +10,7 @@ a:focus { outline: 0; }
 
 #page-wrap {
     width: 70%;
+		height: 100%;
     margin: auto;
     background: #91c7ff;
     padding: 8px;
@@ -17,6 +18,10 @@ a:focus { outline: 0; }
 	background: -moz-linear-gradient(top,  #eee,  #ccc);
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
+}
+.genderRadio{
+	display: inline-block;
+	height: 20px;
 }
 
 .group{
