@@ -16,6 +16,8 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
     .then(function(response){
     var head = $('head');
     head.append($compile(fonts[template])($scope));
+    head.append($compile("<link rel='stylesheet' type='text/css' href='http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css' media='all' />")($scope));
+
     head.append($compile('<link rel="stylesheet" href="../css/resumeTemplates/'+template+'.css">')($scope));
     var data = $compile(response.data)($scope);
     $("#downloadPreview").html($compile(data)($scope));
@@ -54,7 +56,7 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
 
     for(var x =  0; x< Object.keys(education).length/4;x++){
       var html='<div class="yui-u yui-gf">'+
-        '<h2 class="h2">'+education['school'+x]+' - '+education['year of graduation'+x]+'</h2>'+
+        '<h2 class="h2">'+education['school'+x]+' - '+education['grad'+x]+'</h2>'+
         '<h3 class="h3">'+education['degree'+x]+' &mdash; <strong>'+education['grade'+x]+'</strong> </h3>'+
       '</div>';
       $('#education').append(html);
