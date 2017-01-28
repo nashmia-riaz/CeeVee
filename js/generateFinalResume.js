@@ -16,7 +16,7 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
     .then(function(response){
     var head = $('head');
     head.append($compile(fonts[template])($scope));
-    head.append($compile("<link rel='stylesheet' type='text/css' href='http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css' media='all' />")($scope));
+    head.append($compile("<link rel='stylesheet' type='text/css' href='../css/yahooApi.css' media='all' />")($scope));
 
     head.append($compile('<link rel="stylesheet" href="../css/resumeTemplates/'+template+'.css">')($scope));
     var data = $compile(response.data)($scope);
