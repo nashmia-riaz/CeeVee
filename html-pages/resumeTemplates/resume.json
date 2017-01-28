@@ -1,0 +1,88 @@
+{
+  "resume":"<link rel='stylesheet' type='text/css' href='http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css' media='all' /> <div class='row'>
+
+  <div id='doc2' class='yui-t7 body'>
+  	<div id='inner'>
+
+  		<div id='hd'>
+  			<div class='yui-gc'>
+  				<div class='yui-u first'>
+  					<h1 class='h1'>{{FullName}}</h1>
+  					<h2 class='h2'>{{Profession}}</h2>
+  				</div>
+
+  				<div class='yui-u'>
+  					<div class='contact-info'>
+  						<h3 class='h3'><a class='a' href='mailto:{{Email}}'>{{Email}}</a></h3>
+  						<h3 class='h3'>{{Phone}}</h3>
+  					</div><!--// .contact-info -->
+  				</div>
+  			</div><!--// .yui-gc -->
+  		</div><!--// hd -->
+
+  		<div id='bd'>
+  			<div id='yui-main'>
+  				<div class='yui-b'>
+
+  					<div class='yui-gf'>
+  						<div class='yui-u first'>
+  							<h2 class='h2'>Profile</h2>
+  						</div>
+  						<div class='yui-u'>
+  							<p class='enlarge p'>
+  								{{Objective}}
+  							</p>
+  						</div>
+  					</div><!--// .yui-gf -->
+
+  					<div class='yui-gf'>
+  						<div class='yui-u first'>
+  							<h2 class='h2'>Skills</h2>
+  						</div>
+  						<div class='yui-u'>
+
+  								<div class='talent'>
+  									<h2 class='h2'>Softwares</h2>
+  									<p class='p'>{{SkillsSoftwares}}</p>
+  								</div>
+
+  								<div class='talent'>
+  									<h2 class='h2'>Technical</h2>
+  									<p class='p'>{{SkillsTechnical}}</p>
+  								</div>
+
+  								<div class='talent'>
+  									<h2 class='h2'>Miscellaneous</h2>
+  									<p class='p'>{{SkillsMisc}}</p>
+  								</div>
+  						</div>
+  					</div><!--// .yui-gf -->
+
+  					<div class='yui-gf'>
+
+  						<div class='yui-u first'>
+  							<h2 class='h2'>Experience</h2>
+  						</div><!--// .yui-u -->
+
+  						<div class='yui-u' id='experience'>
+
+  						</div><!--// .yui-u -->
+  					</div><!--// .yui-gf -->
+
+
+  					<div class='yui-gf ' id='education'>
+  						<div class='yui-u first'>
+  							<h2 class='h2'>Education</h2>
+  						</div>
+
+  					</div><!--// .yui-gf -->
+
+
+  				</div><!--// .yui-b -->
+  			</div><!--// yui-main -->
+  		</div><!--// bd -->
+
+  	</div><!-- // inner -->
+  </div><!--// doc -->
+  </div>"
+}
