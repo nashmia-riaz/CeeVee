@@ -1,12 +1,12 @@
 var preview=[
 	{
 		"filename": "1.jpg",
-		"name":"Bold"
+		"name":"Dark"
 	},
 
 	{
 		"filename":"2.jpg",
-		"name":"Simple"
+		"name":"Fun"
 	},
 
 	{
@@ -16,30 +16,8 @@ var preview=[
 
 	{
 		"filename":"4.jpg",
-		"name":"Professional"
-	},
-
-	{
-		"filename":"5.jpg",
-		"name":"Professional"
-	},
-
-	{
-		"filename":"6.jpg",
-		"name":"Professional"
-	},
-
-	{
-		"filename":"7.jpg",
-		"name":"Professional"
-	},
-
-	{
-		"filename":"8.jpg",
-		"name":"Professional"
+		"name":"Bold"
 	}
-
-
 
 ];
 
@@ -49,10 +27,11 @@ $(function(){
   function generateTemplatesPreview(){
 
     var html="";
+		var temp = "template";
     for(var x=0;x < preview.length;x++){
       html += "<div class='col col-lg-4 col-md-6 col-sm-6 col-xs-12'>"
         +"<div class='resumeTemplatePreview centerDiv'>"
-				+"<a href='finalPreview.html'>"
+				+"<a href='finalPreview.html' onclick='localStorage.setItem(\""+"template"+"\",\""+preview[x].name+"\")'>"
           +"<div class='resumeTemplatePicture'>"
               +"<img class='img-responsive' src='../images/templatePreviewImages/"+preview[x].filename+"'>"
             	+"<div class='resumeTemplateText'>"

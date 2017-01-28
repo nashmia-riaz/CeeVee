@@ -1,6 +1,13 @@
 // $(function(){
-var fonts = [];
+var fonts = {"Simple":'<link href"https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">"',
+"Dark":'<link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display" rel="stylesheet"> ',
+"Bold":'<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic" rel="stylesheet">',
+"Elegant":'<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet"> ',
+"Fun":'<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />'
+};
 
+var template = localStorage.getItem("template");
+console.log(template);
 
 var app = angular.module("myResumeApp",[]);
 
@@ -8,8 +15,8 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
     $http.get("resumeTemplates/resume.html")
     .then(function(response){
     var head = $('head');
-    head.append($compile('<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">')($scope));
-    head.append($compile('<link rel="stylesheet" href="../css/resumeTemplates/simple.css">')($scope));
+    head.append($compile(fonts[template])($scope));
+    head.append($compile('<link rel="stylesheet" media="print" href="../css/resumeTemplates/'+template+'.css">')($scope));
     var data = $compile(response.data)($scope);
     $("#downloadPreview").html($compile(data)($scope));
 
@@ -71,16 +78,21 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
   /**********************************************/
 
   $("#button").click(function(){
-    html2canvas($("#downloadPreview"), {
-            onrendered: function(canvas) {
-
-                var imgData = canvas.toDataURL('image/png');
-                console.log('Report Image URL: '+imgData);
-                var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
-                doc.addImage(imgData, 'PNG', -50, -15,310,330);
-                doc.save('sample.pdf');
-            }
-        });
-    // $('#downloadPreview').printElement();
+  //   html2canvas($("#downloadPreview"), {
+  //           onrendered: function(canvas) {
+  //
+  //               var imgData = canvas.toDataURL('image/png');
+  //               console.log('Report Image URL: '+imgData);
+  //               var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
+  //               doc.addImage(imgData,  'PNG', 10, 10, 180, 150);
+  //               doc.save('sample.pdf');
+  //           }
+  //       });
+  var prtContent = document.getElementById("downloadPreview");
+  var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+  WinPrint.document.write(prtContent.innerHTML);
+  WinPrint.document.close();
+  WinPrint.focus();
+  WinPrint.print();
+  WinPrint.close();
   });
-// });

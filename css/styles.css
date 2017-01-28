@@ -11,6 +11,7 @@ body{
     color: #003554;
     background-color: #f4f4f2;
     font-family: "Ubuntu", sans-serif;
+    -webkit-print-color-adjust: exact 
 }
 h1{
     font-family:"Graduate", cursive;

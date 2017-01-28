@@ -1,0 +1,97 @@
+/*
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+		html resume
+
+		v0.9: 5/28/09\
+
+		design and code by: thingsthatarebrown.com
+												(matt brown)
+---------------------------------------------------------------------------------
+#1f3862
+#df1e37
+#e8e9ed
+#c8ced7
+#424242
+
+*/
+h1, h2, h3, h4{
+  margin: 0;
+}
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color: #fff;  }
+.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #266400; }
+
+/* //-- yui-grids style overrides -- */
+.body {font-family: 'Josefin Sans', sans-serif; color:#424242; width: 100%; background:#e8e9ed;}
+#inner { padding: 10px 80px; margin: 80px auto; background: #e8e9ed;  }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; }
+
+/* //-- header, body, footer -- */
+#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; }
+#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+#bd, #ft { margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #844343; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+.h2 { font-size: 152% }
+.h3, .h4 { font-size: 122%; }
+.h1, .h2, .h3, .h4 { color: #424242; margin: 0px; margin-bottom: 5px;font-family: 'Oswald', sans-serif; }
+.p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+.a { color: #424242 }
+.a:hover { text-decoration: none; }
+.strong { font-weight: bold; }
+li { line-height: 24px;  }
+.p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+.p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.yui-gf .first h2 {display: block; font-size: 2em; color:#1f3862;background: url('../../images/templatePreviewImages/arrow.png') no-repeat center;
+background-size: cover;width: 300px; height: 60px; padding-top: 15px; padding-left:10px;}
+.last { border-bottom: 0 }
+
+
+/* //-- section styles -- */
+
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
+
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; }
+.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job p { margin: 0.75em 0 3em 0; }
+
+.last { border: none; }
+.skills-list {  }
+.skills-list ul { margin: 0; }
+.skills-list li { margin: 3px 0; padding: 3px 0; }
+.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+.talent { width: 32%; float: left }
+.talent h2 { margin-bottom: 6px; }
+
+#srt-ttab { margin-bottom: 100px; text-align: center;  }
+#srt-ttab img.last { margin-top: 20px }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u{ display: block!important;clear:both!important;}
+.yui-gf div.first{display: block!important; margin-bottom: 10px;}
+.yui-u.first ~ .yui-u{
+  float: left;
+  width:100%;
+}
+.yui-u h1{color:#1f3862;}
+.yui-u h2{color:#df1e37;}
+.job h2{padding-bottom:5px;border-bottom: 2px #c8ced7 solid;}
+.yui-gc .yui-u .contact-info{width:40%!important;float:right;text-align:right;margin-top:-80px;}
+
+.talent {width:30%;
+}
+.talent .p{
+  height:100%;
+  word-wrap: break-word;
+  text-align:justify;
+}
