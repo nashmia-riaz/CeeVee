@@ -1,6 +1,6 @@
 $(function() {
 
-    var newHash      = "",
+    var newHash      = "formMain.html",
         $mainContent = $("#main-content"),
         $pageWrap    = $("#page-wrap"),
         baseHeight   = 0,
