@@ -80,13 +80,12 @@ $(function() {
 });
 var room_education, room_experience;
 if(localStorage.getItem("room_education")){
-    room_education=localStorage.getItem("room_education");
-    alert(room_education);}
+    room_education=localStorage.getItem("room_education");}
 else
     room_education=0;
 if(localStorage.getItem("room_experience")){
     room_education=localStorage.getItem("room_experience");
-    alert(room_experience);}
+}
 else
     room_experience=0;
 function add_fields_education() {
@@ -98,8 +97,8 @@ function add_fields_education() {
     '<label class="cgpa">CGPA</label><br><input type="text" id="CGPA" name="grade'+room_education+'"><br>'+
     '<label class="school/college">School/College</label><br><input type="text" id="school/college" name="school'+room_education+'"><br>';
     $("#page-wrap").css("height","100%");
-    objTo.appendChild(divtest);
-    localStorage.setItem("room_education", room_education);
+        objTo.appendChild(divtest);
+        localStorage.setItem("room_education", room_education);
 }
 
 
