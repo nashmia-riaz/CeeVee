@@ -68,6 +68,11 @@ $(function(){
 
   generateTemplatesPreview();
 
+  // Retrieve the object from storage
+  // var retrievedObject = localStorage.getItem("#Skills");
+
+  // console.log('retrievedObject: ', JSON.parse(retrievedObject));
+
   /**********************************************/
   $("button").click(function(){
     html2canvas($("body"), {

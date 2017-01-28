@@ -34,39 +34,38 @@
 
 
     <div id="page-wrap">
-        <div>
-            <h1>Information</h1>
-
-            <nav>
-                <ul class="group">
-                    <li><a href="index.html">Personal Details</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                </ul>
-                <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="sectionLink">
-                  <a href="index.html">Personal Details</a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="sectionLink">
-                  <a href="index.html">Education</a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="sectionLink">
-                  <a href="index.html">Experience</a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="sectionLink">
-                  <a href="index.html">Skills</a>
-                </div>
-            </div>
-          </div> -->
-            </nav>
+      <h1>Information</h1>
+      <nav>
+        <div class="container-fluid">
+          <div class="row" id="infoLinks">
+            <a href="formMain.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">
+                Personal Details
+              </div>
+            </a>
+            <a href="education.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">Education
+              </div>
+            </a>
+            <a href="experience.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">
+                Experience
+              </div>
+            </a>
+            <a href="skills.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">
+                Skills
+              </div>
+            </a>
+          </div>
         </div>
+      </nav>
+
 
         <section id="main-content">
             <div id="guts">
 
-                <form>
+                <form id="PersonalDetails">
                     <label class="fname">First Name</label><br>
                     <input type="text" id="fname" name="firstname"><br>
 
@@ -76,15 +75,15 @@
                     <label class="gender">Gender</label>
                     <div class="genderRadio">
 
-                        <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+                        <input id="radio-1" class="radio-custom" name="gender" type="radio" value="male" checked>
                         <label for="radio-1" class="radio-custom-label">Male</label>
                     </div>
                     <div class="genderRadio">
-                        <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                        <input id="radio-2" class="radio-custom" name="gender" value="female" type="radio">
                         <label for="radio-2" class="radio-custom-label">Female</label>
                     </div>
                     <div class="genderRadio">
-                        <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                        <input id="radio-3" class="radio-custom" name="gender" value="other" type="radio">
                         <label for="radio-3" class="radio-custom-label">Other</label>
                     </div><br><br>
 
@@ -102,15 +101,13 @@
                     <input type="tel" id="phonenum" name="phonenum"><br>
 
                     <label class="add">Address</label><br>
-                    <input type="text" id="add" name="add"><br>
+                    <input type="text" id="add" name="address"><br>
 
                     <label class="summary">Objective</label><br>
-                    <textarea name="text1" cols="50" rows="5"></textarea><br>
-
-
-                    <button class="button" a link rel="import" href="form2.html" type="reset">Clear</button>
+                    <textarea name="objective" cols="50" rows="5"></textarea><br>
 
                 </form>
+                <button class="button" a link rel="import" href="form2.html" type="reset">Clear</button>
             </div>
         </section>
 

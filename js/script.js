@@ -126,26 +126,26 @@ $(function(){
   });
 
   $(".stepsIndividual:eq( 0 )").click(function(){
-    $("#step1Information").removeClass("visible-xs-block");
-    $("#step"+prevClick+"Information").addClass("visible-xs-block");
+    $("#step1Information").fadeIn(500).removeClass("visible-xs-block");
+    $("#step"+prevClick+"Information").fadeOut(500).addClass("visible-xs-block");
     prevClick=1;
   });
 
   $(".stepsIndividual:eq( 1 )").click(function(){
-    $("#step2Information").removeClass("visible-xs-block");
-    $("#step"+prevClick+"Information").addClass("visible-xs-block");
+    $("#step2Information").fadeIn(500).removeClass("visible-xs-block");
+    $("#step"+prevClick+"Information").fadeOut(500).addClass("visible-xs-block");
     prevClick=2;
   });
 
   $(".stepsIndividual:eq( 2 )").click(function(){
-    $("#step3Information").toggleClass("visible-xs-block");
-    $("#step"+prevClick+"Information").toggleClass("visible-xs-block");
+    $("#step3Information").fadeIn(500).removeClass("visible-xs-block");
+    $("#step"+prevClick+"Information").fadeOut(500).addClass("visible-xs-block");
     prevClick=3;
   });
 
   $(".stepsIndividual:eq( 3 )").click(function(){
-    $("#step4Information").toggleClass("visible-xs-block");
-    $("#step"+prevClick+"Information").toggleClass("visible-xs-block");
+    $("#step4Information").fadeIn(500).removeClass("visible-xs-block");
+    $("#step"+prevClick+"Information").fadeOut(500).addClass("visible-xs-block");
     prevClick=4;
   });
 
@@ -163,5 +163,5 @@ $(function(){
   });
 
   /**********************************************/
-  
+
 });

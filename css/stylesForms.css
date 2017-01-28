@@ -1,7 +1,7 @@
 
 * { margin: 0; padding: 0; }
 html { overflow-y: scroll; }
-/*body { font: 12px/1.4 Helvetica, sans-serif; background: #333; color: #333; }
+/*b { font: 12px/1.4 Helvetica, sans-serif; background: #333; color: #333; }
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 .group { display: block; clear: both; }
  * html .group { height: 1%; } .group { display: block; }*/ /* close commented backslash hack */
@@ -12,8 +12,10 @@ a:focus { outline: 0; }
     width: 70%;
 		height: 100%;
     margin: auto;
+		margin-top: 20px;
     background: #91c7ff;
     padding: 8px;
+		font-family: "Ubuntu", sans-serif;
     background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
 	background: -moz-linear-gradient(top,  #eee,  #ccc);
 	-webkit-border-radius: 16px;
@@ -86,7 +88,7 @@ nav ul li a:active, nav ul li a.current {
 }
 
 input[type=text] {
-    width: 40%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -100,7 +102,7 @@ input[type=text]:focus {
 }
 
 input[type=date] {
-    width: 40%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -306,4 +308,36 @@ body{
 
 .radio-custom:focus + .radio-custom-label {
   outline: 0.5px solid #ddd; /* focus style */
+}
+
+.sectionLink{
+	padding: 10px;
+	background-color: #41b7c4;
+}
+.sectionLink:nth-child(-n+3){
+	border-right: 2px white solid;
+}
+#infoLinks a{
+	color: white;
+	text-decoration: none;
+}
+.sectionLink:hover{
+	border-top: 1px solid #4789b4;
+	background: #f4f4f2;
+	color: #00b395;
+}
+.current div{
+	border-top-color: #245779;
+	background: #003554;
+	position: relative;
+	top: 1px;
+}
+.current div:hover{
+	background-color:#003554;
+	cursor: default;
+	color: white;
+	border-top: none;
+}
+.container-fluid {
+	width: 100%;
 }

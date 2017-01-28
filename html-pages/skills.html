@@ -23,19 +23,36 @@
             <h1>Information</h1>
 
             <nav>
-                <ul class="group">
-                    <li><a href="formMain.html">Personal Details</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                </ul>
-            </nav>
+        <div class="container-fluid">
+          <div class="row" id="infoLinks">
+            <a href="formMain.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">
+                Personal Details
+              </div>
+            </a>
+            <a href="education.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">Education
+              </div>
+            </a>
+            <a href="experience.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">
+                Experience
+              </div>
+            </a>
+            <a href="skills.html">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sectionLink">
+                Skills
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
         </div>
 
         <section id="main-content">
             <div id="guts">
 
-                <form>
+                <form id="Skills">
                     <label class="soft">Softwares</label><br>
                     <input type="text" id="soft" name="softwares"><br>
 
@@ -45,11 +62,9 @@
                     <label class="misc">Miscellaneous</label><br>
                     <input type="text" id="misc" name="miscellaneous"><br>
 
-
-
                 </form>
-
-                <button class="button" onclick="window.location.assign('templates.html');" id="submitButton">Submit</button>            </div>
+                <button class="button" onclick="window.location.assign('templates.html');" id="submitButton">Submit</button>
+            </div>
         </section>
 
 
