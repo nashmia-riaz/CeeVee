@@ -61,9 +61,6 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
     }
 
   })
-  .catch(function(){
-    alert("page not found");
-  });
 }]);
 
   /**************Generate download page**********/
