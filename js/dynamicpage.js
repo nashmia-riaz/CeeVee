@@ -27,7 +27,6 @@ $(function() {
             $inputs.each(function() {
                 values[this.name] = $(this).val();
             });
-            console.log(values);
 
             // Put the object into storage
             localStorage.setItem(formID, JSON.stringify(values));
@@ -79,10 +78,6 @@ $(function() {
     });
 
     $(window).trigger('hashchange');
-
-    $('form').submit(function(){
-        alert('submitted');
-    });
 
 });
 
