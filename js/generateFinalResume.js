@@ -78,21 +78,14 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
   /**********************************************/
 
   $("#button").click(function(){
-  //   html2canvas($("#downloadPreview"), {
-  //           onrendered: function(canvas) {
-  //
-  //               var imgData = canvas.toDataURL('image/png');
-  //               console.log('Report Image URL: '+imgData);
-  //               var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
-  //               doc.addImage(imgData,  'PNG', 10, 10, 180, 150);
-  //               doc.save('sample.pdf');
-  //           }
-  //       });
-  var prtContent = document.getElementById("downloadPreview");
-  var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
-  WinPrint.document.write(prtContent.innerHTML);
-  WinPrint.document.close();
-  WinPrint.focus();
-  WinPrint.print();
-  WinPrint.close();
+    html2canvas($("#doc2"), {
+            onrendered: function(canvas) {
+
+                var imgData = canvas.toDataURL('image/png');
+                console.log('Report Image URL: '+imgData);
+                var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
+                doc.addImage(imgData,  'PNG', 0, 0, 210, 297);
+                doc.save('sample.pdf');
+            }
+        });
   });
