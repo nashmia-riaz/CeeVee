@@ -1,5 +1,4 @@
 $(function() {
-
     var newHash      = "formMain.html",
         $mainContent = $("#main-content"),
         $pageWrap    = $("#page-wrap"),
@@ -13,7 +12,6 @@ $(function() {
         window.location.hash = $(this).attr("href");
         return false;
     });
-
     $(window).bind('hashchange', function(){
 /******************************************************************************/
         var formID = $('.current').text().trim().replace(/\s/g,'');
@@ -80,9 +78,17 @@ $(function() {
     $(window).trigger('hashchange');
 
 });
-
-var room_experience = 0;
-var room_education = 0;
+var room_education, room_experience;
+if(localStorage.getItem("room_education")){
+    room_education=localStorage.getItem("room_education");
+    alert(room_education);}
+else
+    room_education=0;
+if(localStorage.getItem("room_experience")){
+    room_education=localStorage.getItem("room_experience");
+    alert(room_experience);}
+else
+    room_experience=0;
 function add_fields_education() {
     room_education++;
     var objTo = document.getElementById('meow');
