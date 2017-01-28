@@ -23,16 +23,35 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
     experience=('retrievedObject: ', JSON.parse(experience));
     education=('retrievedObject: ', JSON.parse(education));
 
-    console.log(personalDetails);
-    console.log(skills);
-    console.log(experience);
-    console.log(education);
         // console.log(x+' : '+retrievedObject[x]);
         // $('[name='+x+']').val(retrievedObject[x]);
 
-    $scope.FullName="Sarah Khan";
-    $scope.PhoneNo="053432345";
-    $scope.EmailAddress="SarahKhan@outlook.com";
+    $scope.FullName=personalDetails.firstname + ' ' +personalDetails.lastname;
+    $scope.Profession = personalDetails.profession;
+    $scope.Phone = personalDetails.phonenum;
+    $scope.Email = personalDetails.email;
+    $scope.Objective = personalDetails.objective;
+
+    $scope.SkillsSoftwares=skills.softwares;
+    $scope.SkillsTechnical= skills.frameworks;
+    $scope.SkillsMisc = skills.miscellaneous;
+
+    for(var x =  0; x< Object.keys(experience).length/4;x++){
+      var html='<div class="job">'+
+        '<h2 class="h2">'+experience['company'+x]+'</h2>'+
+        '<h3 class="h3">'+experience['designation'+x]+'</h3>'+
+        '<h4 class="h4">'+experience['starting date'+x]+' - '+experience['end date'+x]+'</h4>'+
+      '</div>';
+      $('#experience').append(html);
+    }
+
+    for(var x =  0; x< Object.keys(education).length/4;x++){
+      var html='<div class="yui-u yui-gf">'+
+        '<h2 class="h2">'+education['school'+x]+' - '+education['year of graduation'+x]+'</h2>'+
+        '<h3 class="h3">'+education['degree'+x]+' &mdash; <strong>'+education['grade'+x]+'</strong> </h3>'+
+      '</div>';
+      $('#education').append(html);
+    }
 
   })
   .catch(function(){
