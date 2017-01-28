@@ -84,7 +84,7 @@ if(localStorage.getItem("room_education")){
 else
     room_education=0;
 if(localStorage.getItem("room_experience")){
-    room_education=localStorage.getItem("room_experience");
+    room_experience=localStorage.getItem("room_experience");
 }
 else
     room_experience=0;
