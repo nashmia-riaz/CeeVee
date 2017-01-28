@@ -5,7 +5,7 @@ var fonts = {"Simple":'<link href"https://fonts.googleapis.com/css?family=Lato" 
 "Elegant":'<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet"> ',
 "Fun":'<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />'
 };
-
+var PDFname="";
 var template = localStorage.getItem("template");
 console.log(template);
 
@@ -36,6 +36,7 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
         // $('[name='+x+']').val(retrievedObject[x]);
 
     $scope.FullName=personalDetails.firstname + ' ' +personalDetails.lastname;
+    PDFname=$scope.FullName;
     $scope.Profession = personalDetails.profession;
     $scope.Phone = personalDetails.phonenum;
     $scope.Email = personalDetails.email;
@@ -84,7 +85,7 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
                 console.log('Report Image URL: '+imgData);
                 var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
                 doc.addImage(imgData,  'PNG', 0, 0, 210, 297);
-                doc.save('sample.pdf');
+                doc.save(PDFname+'- Resume.pdf');
             }
         });
   });
