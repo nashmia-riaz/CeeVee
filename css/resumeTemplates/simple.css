@@ -19,7 +19,7 @@ h1, h2, h3, h4{
 .msg a:hover { background: #266400; }
 
 /* //-- yui-grids style overrides -- */
-.body { font-family: Georgia; color: #444; width: 100%;}
+.body { font-family: 'Lora', serif;; color: #444; width: 100%;}
 #inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4{
 .h3, .h4 { font-size: 122%; }
 .h1, .h2, .h3, .h4 { color: #333; margin: 0px; margin-bottom: 5px;}
 .p { font-size: 100%; line-height: 18px; padding-right: 3em; }
-.a { color: #990003 }
+.a {color:black;}
 .a:hover { text-decoration: none; }
 .strong { font-weight: bold; }
 li { line-height: 24px; border-bottom: 1px solid #ccc; }

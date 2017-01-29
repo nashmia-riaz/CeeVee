@@ -3,7 +3,8 @@ var fonts = {"Simple":'<link href"https://fonts.googleapis.com/css?family=Lato" 
 "Dark":'<link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display" rel="stylesheet"> ',
 "Bold":'<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic" rel="stylesheet">',
 "Elegant":'<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet"> ',
-"Fun":'<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />'
+"Fun":'<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />',
+"Simple":'<link href="https://fonts.googleapis.com/css?family=Lobster|Lora" rel="stylesheet"> '
 };
 var PDFname="";
 var template = localStorage.getItem("template");

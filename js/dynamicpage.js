@@ -23,6 +23,7 @@ $(function() {
             // get an associative array of just the values.
             var values = {};
             $inputs.each(function() {
+              if($(this).val().length>0)
                 values[this.name] = $(this).val();
             });
 
@@ -78,7 +79,8 @@ $(function() {
     $(window).trigger('hashchange');
 
 });
-var room_education, room_experience;
+var room_education;
+var room_experience;
 if(localStorage.getItem("room_education")){
     room_education=localStorage.getItem("room_education");}
 else

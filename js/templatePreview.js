@@ -17,6 +17,11 @@ var preview=[
 	{
 		"filename":"4.jpg",
 		"name":"Bold"
+	},
+
+	{
+		"filename":"5.jpg",
+		"name":"Simple"
 	}
 
 ];
