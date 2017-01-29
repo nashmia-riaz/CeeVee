@@ -77,6 +77,21 @@ $(function() {
     });
 
     $(window).trigger('hashchange');
+    $('.button').click(function(){
+          formID = "#Skills";
+          var $inputs = $(formID+' :input');
+
+          // not sure if you wanted this, but I thought I'd add it.
+          // get an associative array of just the values.
+          var values = {};
+          $inputs.each(function() {
+            if($(this).val().length>0)
+              values[this.name] = $(this).val();
+          });
+
+          // Put the object into storage
+          localStorage.setItem(formID, JSON.stringify(values));
+    });
 
 });
 var room_education;
