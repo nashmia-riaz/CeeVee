@@ -40,8 +40,8 @@ h1, h2, h3, h4{
 /* //-- core typography and style -- */
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
 .h2 { font-size: 152% }
-.h3, .h4 { font-size: 122%; }
 .h1, .h2, .h3, .h4 { color: #cfda42; margin: 0px; margin-bottom: 5px;font-family: 'Amatic SC', cursive;}
+.h3, .h4 { font-size: 122%; font-family:'Josefin Sans', sans-serif;}
 .p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 .a { color: #cfda42; }
 .a:hover { text-decoration: none; }

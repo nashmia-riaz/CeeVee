@@ -67,26 +67,15 @@ app.controller("myController",['$http','$scope','$compile',function($http, $scop
   })
 }]);
 
-  /**************Generate download page**********/
-  function generateDownloadPage(){
-    var html="";
 
-    html+="<div id='placeHolder'></div>";
-    $("#downloadPreview").html(html);
-  }
-
-  // generateDownloadPage();
-  /**********************************************/
 
   $("#button").click(function(){
     html2canvas($("#doc2"), {
-            onrendered: function(canvas) {
-
-                var imgData = canvas.toDataURL('image/png');
-                console.log('Report Image URL: '+imgData);
-                var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
-                doc.addImage(imgData,  'PNG', 0, 0, 210, 297);
-                doc.save(PDFname+'- Resume.pdf');
-            }
-        });
+        onrendered: function(canvas) {
+            var imgData = canvas.toDataURL('image/png',1.0);
+            var doc = new jsPDF('1', 'mm', "a4"); //210mm wide and 297mm high
+            doc.addImage(canvas,  'JPEG', 0, 0, 210, 297);
+            doc.save(PDFname+'- Resume.pdf');
+        }
+    });
   });
